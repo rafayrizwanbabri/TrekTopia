@@ -1,33 +1,70 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-    public class FlightObject
+    public partial class cars : Form
     {
-        public DateTime date;
-        public string origin;
-        public string destination;
-        public int segments;
-        public decimal price;
-        public int noOfseats;
-
-        public override string ToString()
+        public cars()
         {
-            return $"Flight Details:\n" +
-                   $"- Date: {date.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture)}\n" +
-                   $"- Origin: {origin}\n" +
-                   $"- Destination: {destination}\n" +
-                   $"- Segments: {segments}\n" +
-                   $"- Price: €{price.ToString("N2", CultureInfo.InvariantCulture)}\n" +
-                   $"- Number of Seats: {noOfseats}";
+            InitializeComponent();
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            hotels h = new hotels();
+            h.ShowDialog();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            flights f = new flights();
+            f.ShowDialog();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            cars c = new cars();
+            c.ShowDialog();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            maps m = new maps();
+            m.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            activities a = new activities();
+            a.ShowDialog();
+        }
     }
 }
