@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form5
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form5";
+            SuspendLayout();
+            // 
+            // Form4
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(953, 607);
+            Name = "Form4";
+            Text = "Form4";
+            ResumeLayout(false);
         }
 
         #endregion
